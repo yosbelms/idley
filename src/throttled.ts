@@ -8,7 +8,9 @@ export function throttled(throttledFn) {
         unschedule(scheduled)
         scheduled = void 0
       }
-      scheduled = schedule(() => throttledFn(...args))
+      scheduled = schedule(function throttledExecution() {
+        throttledFn(...args)
+      })
     }
   })(throttledFn)
 }

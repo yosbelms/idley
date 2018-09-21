@@ -16,7 +16,7 @@ export function debounced(debouncedFn) {
 
 function executeDebouncedTasks() {
   while (debouncedTasks.length) {
-    const task = scheduledExcuteDebouncedTasks.shift()
+    const task = debouncedTasks.shift()
     task.fn(...task.args)
   }
 }
