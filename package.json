@@ -1,6 +1,6 @@
 {
   "name": "idley",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Helper functions for implementing the idle-until-urgent pattern",
   "repository": "https://github.com/yosbelms/idley.git",
   "main": "lib/index.js",
@@ -8,8 +8,8 @@
   "scripts": {
     "test": "jasmine-ts",
     "build": "tsc --sourceMap",
-    "clean": "rm -f ./lib/*",
-    "prepublishj": "yarn clean && yarn build"
+    "clean": "rm -rf ./lib/*",
+    "prepublish": "yarn clean && yarn build"
   },
   "keywords": [
     "idle",

@@ -14,5 +14,3 @@ if (typeof w.requestIdleCallback === 'function') {
   }
   unschedule = clearTimeout
 }
-
-
