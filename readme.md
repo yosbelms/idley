@@ -31,7 +31,7 @@ var idley = require('idley')
 Creates a function that returns the result of executing the passed `fn` when the browser is idle. If the result is requested and it has not been computed yet, the function will be executed immediately.
 
 ```ts
-const { computed } from 'idely'
+import { computed } from 'idley'
 
 const heavyTask = () => 5
 
@@ -47,7 +47,7 @@ console.log(foo()) // 5
 Creates a throttled function that only invokes the passed `fn` at most once when the browser is idle.
 
 ```ts
-const { throttled } from 'idely'
+import { throttled } from 'idley'
 
 const heavyTask = (n) => console.log(n)
 
@@ -67,7 +67,7 @@ Creates a debounced function that delays invoking the passed `fn` until the brow
 
 
 ```ts
-const { debounced } from 'idely'
+import { debounced } from 'idley'
 
 const heavyTask = (n) => console.log(n)
 
